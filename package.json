@@ -1,0 +1,64 @@
+{
+  "name": "@model-w/sentry",
+  "version": "0.1.0",
+  "description": "Nuxt module to make sentry work on Nuxt3/Vue3 side",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ModelW/sentry-ts.git"
+  },
+  "author": "Rémy Sanchez (@xowap)",
+  "license": "WTFPL",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/types.d.ts",
+      "import": "./dist/module.mjs",
+      "require": "./dist/module.cjs"
+    }
+  },
+  "homepage": "https://github.com/ModelW/sentry-ts#readme",
+  "contributors": [
+    "Laurent Treguier",
+    "Ivan Lorenzo"
+  ],
+  "bugs": {
+    "url": "https://github.com/ModelW/sentry-ts/issues"
+  },
+  "main": "./dist/module.cjs",
+  "types": "./dist/types.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "prepack": "nuxt-module-build",
+    "dev": "nuxi dev playground",
+    "dev:build": "nuxi build playground",
+    "dev:prepare": "nuxt-module-build --stub && nuxi prepare playground",
+    "release": "npm run lint && npm run test && npm run prepack && changelogen --release && npm publish && git push --follow-tags",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "test:watch": "vitest watch"
+  },
+  "dependencies": {
+    "@nuxt/kit": "^3.3.1",
+    "@sentry/vue": "^7.44.2",
+    "h3": "^1.6.2"
+  },
+  "devDependencies": {
+    "@nuxt/eslint-config": "^0.1.1",
+    "@nuxt/module-builder": "^0.2.1",
+    "@nuxt/schema": "^3.3.1",
+    "@nuxt/test-utils": "^3.3.1",
+    "changelogen": "^0.5.1",
+    "eslint": "^8.36.0",
+    "nuxt": "^3.3.1",
+    "vitest": "^0.29.3"
+  },
+  "keywords": [
+    "sentry",
+    "nuxt3",
+    "wagtail",
+    "model-w",
+    "modelw"
+  ]
+}
