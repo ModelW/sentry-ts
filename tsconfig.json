@@ -1,3 +1,25 @@
 {
-  "extends": "./playground/.nuxt/tsconfig.json"
+    "extends": "./playground/.nuxt/tsconfig.json",
+    "compilerOptions": {
+        "target": "es2018",
+        "module": "esnext",
+        "lib": ["dom", "es2018"],
+        "moduleResolution": "node",
+        "paths": {
+            "~/*": [
+                "./*"
+            ],
+            "@/*": [
+                "./*"
+            ]
+        }
+    },
+    "esModuleInterop": true,
+    "allowJs": true,
+    "sourceMap": true,
+    "strict": true,
+    "noEmit": true,
+    "experimentalDecorators": true,
+    "baseUrl": ".",
+
 }

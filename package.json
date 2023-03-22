@@ -16,6 +16,9 @@
       "require": "./dist/module.cjs"
     }
   },
+  "engines": {
+    "node": ">=16.0.1"
+  },
   "homepage": "https://github.com/ModelW/sentry-ts#readme",
   "contributors": [
     "Laurent Treguier",

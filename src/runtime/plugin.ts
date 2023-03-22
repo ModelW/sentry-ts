@@ -10,7 +10,7 @@ export default defineNuxtPlugin((nuxtApp) => {
             app: nuxtApp.vueApp,
             dsn: config.public.sentryDSN,
             environment: config.public.sentryEnvironment,
-            tunnel: "/sentry",
+            tunnel: "/api/sentry",
         });
     }
 });
