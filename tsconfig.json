@@ -3,17 +3,9 @@
     "compilerOptions": {
         "target": "es2018",
         "module": "esnext",
-        "lib": ["dom", "es2018"],
-        "moduleResolution": "node",
-        "paths": {
-            "~/*": [
-                "./*"
-            ],
-            "@/*": [
-                "./*"
-            ]
-        }
+        "lib": ["dom", "es2018"]
     },
+    "moduleResolution": "Node",
     "esModuleInterop": true,
     "allowJs": true,
     "sourceMap": true,
@@ -21,5 +13,12 @@
     "noEmit": true,
     "experimentalDecorators": true,
     "baseUrl": ".",
-
+    "paths": {
+        "~/*": [
+            "./*"
+        ],
+        "@/*": [
+            "./*"
+        ]
+    }
 }

@@ -1,6 +1,6 @@
 {
   "name": "@model-w/sentry",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Nuxt module to make sentry work on Nuxt3/Vue3 side",
   "repository": {
     "type": "git",
@@ -17,7 +17,7 @@
     }
   },
   "engines": {
-    "node": ">=16.0.1"
+    "node": ">=16.0.0"
   },
   "homepage": "https://github.com/ModelW/sentry-ts#readme",
   "contributors": [
