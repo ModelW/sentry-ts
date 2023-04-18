@@ -21,7 +21,7 @@ jobs:
         run: npm ci
 
       - name: Authenticate with NPM
-        run: npm config set "_authToken=$NPM_TOKEN"
+        run: npm config set "//registry.npmjs.org/:_authToken=$NPM_TOKEN"
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
