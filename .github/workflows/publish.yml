@@ -26,4 +26,6 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Publish package
-        run: npm publish
+        run: |
+          npm run dev:build
+          npm publish
