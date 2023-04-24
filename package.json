@@ -45,6 +45,7 @@
   "dependencies": {
     "@nuxt/kit": "^3.4.1",
     "@sentry/vue": "^7.48.0",
+    "defu": "^6.1.2",
     "h3": "^1.6.4"
   },
   "devDependencies": {

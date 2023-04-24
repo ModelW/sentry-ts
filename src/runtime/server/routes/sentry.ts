@@ -3,7 +3,7 @@ import { defineEventHandler } from "h3";
 
 export default defineEventHandler(async (event) => {
   const config = useRuntimeConfig();
-  const dsn = new URL(config.public.sentryDSN);
+  const dsn = new URL(config.public.sentry.dsn);
   // An authorization header has to be used otherwise Node complains about
   // authentication details being embedded in the URL.
   const headers = new Headers({
