@@ -1,6 +1,6 @@
 {
   "name": "@model-w/sentry",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "description": "Nuxt module to make sentry work on Nuxt3/Vue3 side",
   "repository": {
     "type": "git",
@@ -45,6 +45,7 @@
   "dependencies": {
     "@nuxt/kit": "^3.4.1",
     "@sentry/vue": "^7.48.0",
+    "defu": "^6.1.2",
     "h3": "^1.6.4"
   },
   "devDependencies": {
