@@ -14,7 +14,7 @@ export default defineEventHandler(async (event) => {
   dsn.username = "";
   dsn.password = "";
   dsn.pathname = `/api${dsn.pathname}/envelope/`;
-  await fetch(dsn.toString(), {
+  return await fetch(dsn.toString(), {
     method: "POST",
     body: event.node.req.read(),
     credentials: "include",
