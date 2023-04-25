@@ -16,10 +16,11 @@ export default defineNuxtConfig(
         "@model-w/sentry"
     ],
     sentry: {
-        dsn: process.env.SENTRY_DSN
+        dsn: process.env.SENTRY_DSN,
+        environment: process.env.SENTRY_ENVIRONMENT
     }
   }
 )
 ```
 
-Once the Sentry DSN is specified, errors should be sent to Sentry.
+Once the Sentry DSN and environment are specified, errors should be sent to Sentry.
