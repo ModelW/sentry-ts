@@ -27,6 +27,7 @@ export default defineNuxtModule<ModuleOptions>({
     // Do not add the extension since the `.ts` will be transpiled to `.mjs` after `npm run prepack`
     addPlugin(resolver.resolve("./runtime/plugin"));
     addServerHandler({
+      route: '/api/sentry',
       handler: resolver.resolve("./runtime/server/routes/sentry"),
     });
   },
