@@ -1,12 +1,12 @@
 # Installation
 
-In order to install the Model W Sentry, you need to add it to the `package.json`, for example `"@model-w/sentry": "~0.3.0"`,
-or use the next command 
+You can install Model W Sentry in your project with the following command.
+
 ```shell
 npm install @model-w/sentry
 ```
 
-Then you can use it in your project modifying the `nuxt.config.ts` file. 
+To use it, configure the module in the `nuxt.config.ts` file. 
 Here is a minimalistic example:
 
 ```typescript
@@ -16,10 +16,11 @@ export default defineNuxtConfig(
         "@model-w/sentry"
     ],
     sentry: {
-        dsn: process.env.SENTRY_DSN
+        dsn: process.env.SENTRY_DSN,
+        environment: process.env.SENTRY_ENVIRONMENT
     }
   }
 )
 ```
 
-Once the Sentry DSN is specified, errors should be sent to Sentry.
+Once the Sentry DSN and environment are specified, errors should be sent to Sentry.
