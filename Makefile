@@ -8,7 +8,7 @@ ifndef VERSION
 	$(error VERSION is undefined)
 endif
 
-release:
+release: check_version
 	git flow release start $(VERSION)
 	npm version $(VERSION)
 	git add package.json package-lock.json
