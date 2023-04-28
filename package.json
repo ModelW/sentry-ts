@@ -1,31 +1,35 @@
 {
   "name": "@model-w/sentry",
   "version": "1.0.0",
+  "type": "module",
   "description": "Nuxt module to make sentry work on Nuxt3/Vue3 side",
+  "license": "WTFPL",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ModelW/sentry-ts.git"
   },
+  "homepage": "https://model-w-sentry.readthedocs.io/en/latest/",
+  "bugs": {
+    "url": "https://github.com/ModelW/sentry-ts/issues"
+  },
   "author": "Rémy Sanchez (@xowap)",
-  "license": "WTFPL",
-  "type": "module",
+  "contributors": [
+    "Laurent Treguier",
+    "Ivan Lorenzo"
+  ],
+  "keywords": [
+    "sentry",
+    "nuxt3",
+    "wagtail",
+    "model-w",
+    "modelw"
+  ],
   "exports": {
     ".": {
       "types": "./dist/types.d.ts",
       "import": "./dist/module.mjs",
       "require": "./dist/module.cjs"
     }
-  },
-  "engines": {
-    "node": ">=16.0.0"
-  },
-  "homepage": "https://github.com/ModelW/sentry-ts#readme",
-  "contributors": [
-    "Laurent Treguier",
-    "Ivan Lorenzo"
-  ],
-  "bugs": {
-    "url": "https://github.com/ModelW/sentry-ts/issues"
   },
   "main": "./dist/module.cjs",
   "types": "./dist/types.d.ts",
@@ -42,6 +46,9 @@
     "test": "vitest run",
     "test:watch": "vitest watch"
   },
+  "engines": {
+    "node": ">=16.0.0"
+  },
   "dependencies": {
     "@nuxt/kit": "^3.4.2",
     "@sentry/vue": "^7.50.0",
@@ -57,12 +64,5 @@
     "eslint": "^8.39.0",
     "nuxt": "^3.4.2",
     "vitest": "^0.30.1"
-  },
-  "keywords": [
-    "sentry",
-    "nuxt3",
-    "wagtail",
-    "model-w",
-    "modelw"
-  ]
+  }
 }
