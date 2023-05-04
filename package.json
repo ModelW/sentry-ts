@@ -1,6 +1,6 @@
 {
   "name": "@model-w/sentry",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "module",
   "description": "Nuxt module to make sentry work on Nuxt3/Vue3 side",
   "license": "WTFPL",
@@ -63,6 +63,6 @@
     "changelogen": "^0.5.3",
     "eslint": "^8.39.0",
     "nuxt": "^3.4.3",
-    "vitest": "^0.31.0"
+    "vitest": "^0.30.1"
   }
 }
